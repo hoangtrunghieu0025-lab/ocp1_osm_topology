@@ -2,3 +2,8 @@
 __pycache__/
 *.pyc
 
+scripts/
+data/raw/
+data/ocp1.osm
+data/ocp1_overpass.osm.pbf
+data/screenshots/

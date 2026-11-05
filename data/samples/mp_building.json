@@ -1,0 +1,92 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-05T04:03:37Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 16676566,
+  "members": [
+    {
+      "type": "way",
+      "ref": 1222467961,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1222467964,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467962,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467963,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467965,
+      "role": "inner"
+    }
+  ],
+  "tags": {
+    "building": "school",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 16676568,
+  "members": [
+    {
+      "type": "way",
+      "ref": 1222467972,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467971,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467967,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467966,
+      "role": "outer"
+    },
+    {
+      "type": "way",
+      "ref": 1222467968,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467969,
+      "role": "inner"
+    },
+    {
+      "type": "way",
+      "ref": 1222467970,
+      "role": "inner"
+    }
+  ],
+  "tags": {
+    "building": "school",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}

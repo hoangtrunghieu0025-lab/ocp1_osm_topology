@@ -1,0 +1,76 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-05T04:02:32Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 761986897,
+  "nodes": [
+    3878471251,
+    7119403368
+  ],
+  "tags": {
+    "alt_name": "Quốc lộ 5B",
+    "alt_name:en": "National Highway 5B",
+    "alt_ref": "QL.5B",
+    "bridge": "yes",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "2",
+    "lit": "no",
+    "maxspeed": "120",
+    "motorcycle": "no",
+    "name": "Cầu B1-05",
+    "name:en": "B1-05 Bridge",
+    "oneway": "yes",
+    "ref": "CT.04",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 761986900,
+  "nodes": [
+    3986724997,
+    7119403370
+  ],
+  "tags": {
+    "alt_name": "Quốc lộ 5B",
+    "alt_name:en": "National Highway 5B",
+    "alt_ref": "QL.5B",
+    "bridge": "yes",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "2",
+    "lit": "no",
+    "maxspeed": "120",
+    "motorcycle": "no",
+    "name": "Cầu B1-05",
+    "name:en": "B1-05 Bridge",
+    "oneway": "yes",
+    "ref": "CT.04",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 896461935,
+  "nodes": [
+    8333375525,
+    8333375524
+  ],
+  "tags": {
+    "bridge": "yes",
+    "highway": "service",
+    "layer": "1",
+    "service": "alley"
+  }
+}
+
+  ]
+}

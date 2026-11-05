@@ -1,0 +1,37 @@
+way_id,highway,layer,bridge,tunnel,name,node_count
+761986897,motorway,2,yes,,Cầu B1-05,2
+761986900,motorway,2,yes,,Cầu B1-05,2
+896461935,service,1,yes,,,2
+896461937,service,1,yes,,,2
+896461939,service,1,yes,,,2
+896475951,service,1,yes,,,2
+896475952,service,1,yes,,,2
+896487603,residential,1,yes,,,2
+896901430,residential,1,yes,,Cầu Lê Xá,2
+897906078,secondary_link,-1,,yes,,2
+897933183,secondary_link,-1,,yes,,2
+901008091,service,1,yes,,,2
+1157972678,proposed,1,yes,,,2
+1157972679,proposed,1,yes,,,2
+1180466138,,-1,,culvert,,2
+1185436453,motorway,2,yes,,Cầu B1-06,2
+1185436455,motorway,2,yes,,Cầu B1-06,2
+1194259001,,-1,,culvert,Kênh Kiên Thành,2
+1223678105,,1,,,Ruby Parking Garage,44
+1227330216,motorway_link,2,yes,,Cầu B1-06,2
+1294907469,,2,,,,5
+1296355128,footway,1,yes,,,2
+1296361876,footway,1,yes,,,2
+1431631668,,1,,,Cầu B1-06,7
+1435815742,,1,,,Cầu B1-05,5
+1435815744,motorway,1,yes,,Cầu B1-04,2
+1435815746,motorway,1,yes,,Cầu B1-04,2
+1435815747,,1,,,Cầu B1-04,5
+1484446923,footway,-1,,,,3
+1484446924,footway,-1,,,,5
+1484447700,footway,-1,,,,3
+1484447701,footway,-1,,,,3
+1484464571,footway,-1,,,,2
+1484464572,footway,-1,,,,4
+1493442128,footway,-1,,,,6
+1513549279,,-1,,culvert,,2
