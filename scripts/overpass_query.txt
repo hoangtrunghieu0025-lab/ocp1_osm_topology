@@ -1,0 +1,8 @@
+[out:xml][timeout:180];
+way(20.9840728,105.9334479,21.0047847,105.9628773)->.w;
+(
+  .w;
+  relation(bw.w)[type=multipolygon];
+);
+(._;>;);
+out meta;
