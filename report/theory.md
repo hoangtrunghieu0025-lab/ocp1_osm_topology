@@ -353,26 +353,11 @@ Nội dung các trang này đã tải về được ngày 2026-11-05.
 
 # LT2 — IMDF (Indoor Mapping Data Format)
 
-Tương ứng mục LT2 trong `task.md`. Nội dung đã được **đối chiếu với đặc tả IMDF 1.0.0** do OGC công bố (docs.ogc.org/cs/20-094, tải ngày 2026-11-05); dữ liệu AEON Mall vẫn là mock.
-
-### Kết quả đối chiếu đặc tả (đã sửa trong LT2)
-
-| Điểm | Bản nháp ban đầu | Theo đặc tả | Đã sửa |
-|------|------------------|-------------|--------|
-| Category của unit "Siêu thị" | `retail` | **Không có** `retail` trong danh sách category của unit (và cũng không có category riêng cho cửa hàng). Ví dụ dùng `room` cho gian hàng; tên cửa hàng nằm ở `occupant` | Đổi sang `room` |
-| Phần mở rộng tên gói | `.imdf` | Gói là file **`.zip`** | Đổi |
-| Tệp bắt buộc | chỉ nói có `manifest.json` | `manifest.json`, `address.geojson`, `venue.geojson` **bắt buộc**; các file còn lại tùy chọn; chỉ **một** venue | Bổ sung ở LT2.2 |
-| Nối tầng bằng thang cuốn / thang máy | chưa biết | Mỗi tầng có một `unit` (`escalator` / `elevator`), nối bằng feature **`relationship`** | Bổ sung ở LT2.5 |
-| `building.category` | thiếu | **Bắt buộc** (`parking`, `transit`, `transit.bus`, `transit.train`, `unspecified`) | Thêm `unspecified` |
-| `venue.display_point` | thiếu | Có trong thuộc tính của venue, kiểu không null | Thêm |
-| Quan hệ venue ↔ building | ghi là suy đoán | **Theo hình học**: mọi feature khác phải nằm trong đa giác của venue; không có trường `venue_id` | Ghi rõ ở LT2.3 |
-| OGC "chuẩn hóa" | nói mơ hồ | Là **OGC Community Standard**: duyệt 2021-02-02, xuất bản 2021-02-18, phiên bản 1.0.0 (do Apple, Autodesk, Esri, Google, NYC DoITT, Ordnance Survey, Safe Software đề xuất) | Sửa ở LT2.1 |
-
-Điểm **đã đúng** ngay từ đầu: 16 loại feature; mỗi feature có `id` (UUID), `type`, `feature_type`, `geometry`, `properties`; building có `geometry: null` (hình dạng ở `footprint`); occupant có `geometry: null` và trỏ qua `anchor_id`; anchor là Point có `unit_id`; amenity là Point có `unit_ids`; opening là LineString có `door` và `level_id`; `footprint.building_ids`; `level.ordinal` (0 là tầng mặt đất, -1 là tầng ngay dưới), `outdoor`, `building_ids`; `venue.category = shoppingcenter`, `opening.category = pedestrian`, `occupant.category = supermarket`, `amenity.category = atm`, `unit.category` gồm `walkway`, `restroom`, `escalator`, `elevator`, `foodservice`.
+Tương ứng mục LT2 trong `task.md`. Nội dung theo **đặc tả IMDF 1.0.0** do OGC công bố (docs.ogc.org/cs/20-094); dữ liệu AEON Mall là mock.
 
 ## LT2.0 — Ví dụ xuyên suốt: AEON Mall (mock)
 
-Toàn bộ LT2 dùng một ví dụ giả lập: trung tâm thương mại **"AEON Mall Mock"**. Đây là dữ liệu **tự bịa để minh họa**, không phải dữ liệu thật của AEON. Tên trường và giá trị `category` đã đối chiếu với đặc tả IMDF 1.0.0 (xem bảng ở đầu LT2).
+Toàn bộ LT2 dùng một ví dụ giả lập: trung tâm thương mại **"AEON Mall Mock"**. Đây là dữ liệu **tự bịa để minh họa**, không phải dữ liệu thật của AEON. Tên trường và giá trị `category` theo đặc tả IMDF 1.0.0.
 
 ### a) Nhìn từ bên ngoài
 
@@ -597,7 +582,7 @@ address 60..01 "1 Đường Mock"
 Nhận xét:
 - Hình học nằm **ngay trong feature**; quan hệ nằm ở các trường `*_id`.
 - Muốn biết "Siêu thị ở tầng nào" phải đi theo chuỗi id, giống tra khóa ngoại trong cơ sở dữ liệu.
-- Một vài chi tiết (như `geometry` của `anchor`, quan hệ `venue` ↔ `building`) trong ví dụ này là suy đoán, cần đối chiếu đặc tả.
+- Quan hệ `venue` ↔ `building` không có trường `*_id`: xác định theo hình học (feature khác nằm trong đa giác của venue), xem LT2.3.
 
 ---
 
@@ -916,7 +901,7 @@ Ra  : đường đi gồm chuỗi  unit → opening → unit → ... , mỗi bư
 
 ### Nguồn tham khảo LT2
 
-Các trang đã tải về và đối chiếu ngày 2026-11-05 (bản IMDF 1.0.0).
+Bản IMDF 1.0.0.
 
 - Đặc tả IMDF (OGC Community Standard): https://docs.ogc.org/cs/20-094/
   - Reference (gói, kiểu dữ liệu): https://docs.ogc.org/cs/20-094/Reference/index.html
